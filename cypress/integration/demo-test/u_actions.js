@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-// testing page elements
+// testing user actions
 
 context ('User actions', () => {
   beforeEach(() => {
@@ -14,7 +14,7 @@ context ('User actions', () => {
     })
   })
 
-  it('click Get Preapproved', () => {
+  it('click Get Pre qualified', () => {
       cy.get('.hproduct').eq(0).within(($hproduct) => {
         cy.get('.financeButtonListing').click()
       })

@@ -5,8 +5,14 @@ The complete suite can be found in this <a href="https://github.com/moanableu/qa
 Developed using Cypress IO
 <br>To run the suite install Cypress as per this <a href="https://docs.cypress.io/guides/getting-started/installing-cypress.html#Installing">instructions</a>
 <br>Make sure that package.json contains the following script<br>
-	```"cypress:open": "cypress open"```
+	```JavaScript
+	"cypress:open": "cypress open"
+	```
 <br>Open Cypress with:<br>
-	```npm run cypress:open```
+	```JavaScript
+	npm run cypress:open
+	```
 <br>The suite has been organized by events logic, you can run each file in the order they have been provided
-<p><strong>Note:</strong> The scope of this project is basic, mostly checking functionality. The suite does not go into form submissions nor login actions
+<p><strong>Notes:</strong><br>The scope of this project is basic, mostly checking functionality.
+<br>The suite does not go into form submissions nor logging-in actions
+<br>Efforts to extend wait times where made, however on occasion time-outs fail these tests

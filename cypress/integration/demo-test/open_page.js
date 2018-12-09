@@ -27,7 +27,7 @@ context('Navigate to page', () => {
     cy.contains('h1','Demo')
   })
 
-  it('navigation bar loads', () => {
+  it('navigation bar loads and navigates to CPO page', () => {
     context('Navigation', () => {
         cy.get('.navbar').contains('Pre-').click()
         cy.get('.dropdown-menu').contains('Certified').click()

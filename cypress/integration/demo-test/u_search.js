@@ -2,7 +2,7 @@
 
 // testing search function
 
-context ('finds search input field & accepts input', () => {
+context ('finds search input field, accepts input & yields results', () => {
 
   it.only('accepts input', () => {
     const typedEntry = 'Nissan 370Z'

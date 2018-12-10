@@ -8,6 +8,8 @@ context ('open vehicle details page', () => {
     cy.wait(3000)
   })
 
+  // open vehicle details page for the first element in our inventory list
+
   it('leads to vehicle details page', () => {
     cy.get('.inventoryList').find('.hproduct').eq(0).within(($hproduct) => {
       cy.get('h3').click()

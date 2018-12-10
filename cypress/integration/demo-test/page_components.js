@@ -9,6 +9,7 @@ context ('Verify inventory view', () => {
   })
 
   it('inventory list and product components load', () => {
+    //navigate to child element
     cy.get('.inventoryList').find('.hproduct')
   })
 
@@ -23,6 +24,7 @@ context ('Verify inventory view', () => {
 
     it('check description elements', () => {
       cy.get('.description>dl').then(($lis) => {
+        //navigate to first child element
         expect($lis.eq(0)).to.contain('Engine')
       })
     })
@@ -39,6 +41,7 @@ context ('Verify inventory view', () => {
   })
 
   it ('CTAs load', () => {
+    //verify that buttons are present for both my-cars actions and for financing application
     cy.get('.hproduct').find('.mycars-vlp')
     cy.get('.hproduct').find('.financeButtonListing')
   })

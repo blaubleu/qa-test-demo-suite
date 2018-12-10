@@ -20,6 +20,7 @@ context('Navigate to page', () => {
   })
 
   it ('logo loads', () => {
+    // verify that logo leads to Index page
     cy.get('.header-default').find('.home-logolink').should('have.attr', 'href', '/')
   })
 
@@ -28,6 +29,7 @@ context('Navigate to page', () => {
   })
 
   it('navigation bar loads and navigates to CPO page', () => {
+    // verify that a second inventory page is present
     context('Navigation', () => {
         cy.get('.navbar').contains('Pre-').click()
         cy.get('.dropdown-menu').contains('Certified').click()
@@ -42,6 +44,7 @@ context('Navigate to page', () => {
   })
 
   it('login access', () => {
+    // verify that users can login
     cy.contains('Log').should('have.attr', 'href', '#login')
   })
 

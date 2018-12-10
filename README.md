@@ -9,6 +9,6 @@ Developed using Cypress IO
 <br>Open Cypress with:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;npm run cypress:open
 <br>The suite has been organized by events logic, you can run each file -double click- in the order they have been provided
-<p><strong>Notes:</strong><br>The scope of this project is basic, mostly checking functionality.
-<br>The suite does not go into form submissions nor logging-in actions
-<br>Efforts to extend wait times where made, however on occasion time-outs fail these tests
+<p><strong>Notes:</strong><br>The scope of this project is functionality.
+<br>The suite does not go into form submissions nor log-in actions
+<br>All test as asynchronous

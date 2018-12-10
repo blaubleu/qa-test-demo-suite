@@ -11,4 +11,4 @@ Developed using Cypress IO
 <br>The suite has been organized by events logic, you can run each file -double click- in the order they have been provided
 <p><strong>Notes:</strong><br>The scope of this project is functionality.
 <br>The suite does not go into form submissions nor log-in actions
-<br>All test as asynchronous
+<br>All test are asynchronous
